@@ -8,6 +8,7 @@ For more details, check out the product page at
   * https://www.tindie.com/products/whatnick/atm90e26-breakout/
   
 Whatnick invests time and resources providing this open source design, please support Whatnick and open-source hardware by purchasing products from the Tindie Store!
+
 Designed by Tisham Dhar/whatnick for Whatnick INC.
 Creative Commons Attribution/Share-Alike, all text above must be included in any redistribution
 
