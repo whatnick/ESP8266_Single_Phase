@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17573,7 +17573,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="R11" library="microbuilder" deviceset="RESISTOR" device="_0603MP" value="1K"/>
 <part name="SJ1" library="microbuilder" deviceset="SOLDERJUMPER_CLOSED" device=""/>
 <part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
-<part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
+<part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S" value="OSHW-LOGOS"/>
 <part name="J4" library="dp_devices" deviceset="CON_DC_M" device="-DC_SMD" value="12V AC"/>
 <part name="R21" library="Seeed-Resistor-2016" deviceset="SMD-RES-0R(0603)" device="" value="100K"/>
 <part name="R22" library="Seeed-Resistor-2016" deviceset="SMD-RES-0R(0603)" device="" value="INF"/>
