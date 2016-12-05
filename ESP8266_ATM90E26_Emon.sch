@@ -9264,88 +9264,6 @@ Standard A4 size frame in Landscape</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Seeed-OPL-Connector">
-<packages>
-<package name="AUDIO6P-SMD-3.5-14.0X6.4X5.0MM">
-<wire x1="0" y1="2.54" x2="-1.905" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="2.54" x2="-1.905" y2="3.175" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="3.175" x2="-13.97" y2="3.175" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="3.175" x2="-13.97" y2="-3.175" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="-3.175" x2="-1.905" y2="-3.175" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="-3.175" x2="-1.905" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="-2.54" x2="0" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.127" layer="21"/>
-<smd name="LS" x="-13.335" y="-3.429" dx="3.302" dy="1.27" layer="1" rot="R90"/>
-<smd name="L" x="-11.303" y="-3.937" dx="2.286" dy="1.27" layer="1" rot="R90"/>
-<smd name="COM2" x="-4.699" y="-3.683" dx="2.794" dy="1.27" layer="1" rot="R90"/>
-<smd name="RS" x="-12.319" y="3.937" dx="2.286" dy="1.27" layer="1" rot="R90"/>
-<smd name="R" x="-7.62" y="3.937" dx="2.286" dy="1.27" layer="1" rot="R90"/>
-<smd name="COM1" x="-4.572" y="3.937" dx="2.286" dy="1.27" layer="1" rot="R90"/>
-<text x="-14.605" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;name</text>
-<text x="-10.16" y="-4.445" size="0.889" layer="27" ratio="11">&gt;value</text>
-<rectangle x1="-13.97" y1="-3.175" x2="-1.905" y2="3.175" layer="39"/>
-<hole x="-12.573" y="0" drill="1.27"/>
-<polygon width="0.127" layer="46">
-<vertex x="-3.175" y="1.4478"/>
-<vertex x="-2.54" y="1.4478" curve="90"/>
-<vertex x="-1.905" y="2.0828"/>
-<vertex x="-1.905" y="2.54"/>
-<vertex x="0" y="2.54"/>
-<vertex x="0" y="-2.54"/>
-<vertex x="-1.905" y="-2.54"/>
-<vertex x="-1.905" y="-2.0828" curve="90"/>
-<vertex x="-2.54" y="-1.4478"/>
-<vertex x="-3.175" y="-1.4478"/>
-</polygon>
-<wire x1="-3.24" y1="-3.175" x2="-3.24" y2="3.175" width="0.0254" layer="20"/>
-</package>
-</packages>
-<symbols>
-<symbol name="AUDIO-JACK-6P-SMD">
-<wire x1="-13.97" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="5.08" x2="12.7" y2="3.81" width="0.254" layer="94"/>
-<wire x1="12.7" y1="3.81" x2="15.24" y2="3.81" width="0.254" layer="94"/>
-<wire x1="15.24" y1="3.81" x2="15.24" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-3.81" x2="12.7" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-3.81" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="-13.97" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-13.97" y1="-5.08" x2="-13.97" y2="5.08" width="0.254" layer="94"/>
-<text x="-6.35" y="6.35" size="1.27" layer="95" ratio="10">&gt;name</text>
-<text x="-2.54" y="-7.62" size="1.27" layer="96" ratio="10">&gt;value</text>
-<pin name="COM1" x="8.89" y="10.16" length="middle" rot="R270"/>
-<pin name="R" x="3.81" y="10.16" length="middle" rot="R270"/>
-<pin name="RS" x="-8.89" y="10.16" length="middle" rot="R270"/>
-<pin name="LS" x="-11.43" y="-10.16" length="middle" rot="R90"/>
-<pin name="L" x="-6.35" y="-10.16" length="middle" rot="R90"/>
-<pin name="COM2" x="11.43" y="-10.16" length="middle" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="AUDIO-JACK-6P-SMD(ST-PJ-312)" prefix="J" uservalue="yes">
-<description>320040007</description>
-<gates>
-<gate name="G$1" symbol="AUDIO-JACK-6P-SMD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="AUDIO6P-SMD-3.5-14.0X6.4X5.0MM">
-<connects>
-<connect gate="G$1" pin="COM1" pad="COM1"/>
-<connect gate="G$1" pin="COM2" pad="COM2"/>
-<connect gate="G$1" pin="L" pad="L"/>
-<connect gate="G$1" pin="LS" pad="LS"/>
-<connect gate="G$1" pin="R" pad="R"/>
-<connect gate="G$1" pin="RS" pad="RS"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="VALUE" value="ST-PJ-312"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Seeed-Resistor-2016">
 <packages>
 <package name="R0603">
@@ -17452,6 +17370,91 @@ Source: 008-0260-0_E.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Connectors">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="JST-2-SMD">
+<description>2mm SMD side-entry connector. tDocu layer indicates the actual physical plastic housing. +/- indicate SparkFun standard batteries and wiring.</description>
+<wire x1="-4" y1="-1" x2="-4" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-4.5" x2="-3.2" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-4.5" x2="-3.2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-2" x2="-2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="2" y1="-2" x2="3.2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="-2" x2="3.2" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="-4.5" x2="4" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="4" y1="-4.5" x2="4" y2="-1" width="0.2032" layer="21"/>
+<wire x1="2" y1="3" x2="-2" y2="3" width="0.2032" layer="21"/>
+<smd name="1" x="-1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="2" x="1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="NC1" x="-3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.27" y="0" size="0.4064" layer="27">&gt;Value</text>
+<text x="2.159" y="-4.445" size="1.27" layer="51">+</text>
+<text x="-2.921" y="-4.445" size="1.27" layer="51">-</text>
+</package>
+</packages>
+<symbols>
+<symbol name="JST_2MM_MALE">
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.778" x2="-2.54" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.302" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="3.302" width="0.254" layer="94"/>
+<wire x1="5.08" y1="3.302" x2="5.08" y2="1.778" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.778" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="4.064" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="4.064" y1="-2.54" x2="4.064" y2="0" width="0.254" layer="94"/>
+<wire x1="4.064" y1="0" x2="-1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.524" y2="-2.54" width="0.254" layer="94"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="middle" rot="R90"/>
+<pin name="+" x="2.54" y="-5.08" visible="off" length="middle" rot="R90"/>
+<pin name="PAD2" x="5.08" y="2.54" visible="off" length="point" rot="R90"/>
+<pin name="PAD1" x="-2.54" y="2.54" visible="off" length="point" rot="R90"/>
+<wire x1="-2.54" y1="1.778" x2="-1.778" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="1.778" x2="-1.778" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="3.302" x2="-2.54" y2="3.302" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.778" x2="4.318" y2="1.778" width="0.254" layer="94"/>
+<wire x1="4.318" y1="1.778" x2="4.318" y2="3.302" width="0.254" layer="94"/>
+<wire x1="4.318" y1="3.302" x2="5.08" y2="3.302" width="0.254" layer="94"/>
+<wire x1="2.032" y1="1.016" x2="3.048" y2="1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.508" x2="2.54" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="1.524" width="0.254" layer="94"/>
+<text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JST_2MM_MALE" prefix="J" uservalue="yes">
+<description>Mates to single-cell LiPo batteries.&lt;br&gt;
+CONN-08352</description>
+<gates>
+<gate name="G$1" symbol="JST_2MM_MALE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST-2-SMD">
+<connects>
+<connect gate="G$1" pin="+" pad="2"/>
+<connect gate="G$1" pin="-" pad="1"/>
+<connect gate="G$1" pin="PAD1" pad="NC1"/>
+<connect gate="G$1" pin="PAD2" pad="NC2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08352"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="CNAME" value="ESP8266 Single Phase Energy Monitor"/>
@@ -17550,7 +17553,6 @@ Source: 008-0260-0_E.pdf</description>
 <part name="R23" library="Seeed-Resistor-2016" deviceset="SMD-RES-0R(0603)" device="" value="1K"/>
 <part name="C21" library="Discrete" deviceset="C*" device="-0603" value="100n"/>
 <part name="C22" library="Discrete" deviceset="C*" device="-0603" value="100n"/>
-<part name="J2" library="Seeed-OPL-Connector" deviceset="AUDIO-JACK-6P-SMD(ST-PJ-312)" device="" value="ST-PJ-312"/>
 <part name="CF1" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
 <part name="U1" library="ATM90E26" deviceset="ATM90E26" device=""/>
 <part name="CF2" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
@@ -17619,6 +17621,8 @@ Source: 008-0260-0_E.pdf</description>
 <part name="U$23" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$25" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$26" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="J1" library="SparkFun-Connectors" deviceset="JST_2MM_MALE" device=""/>
+<part name="J3" library="SparkFun-Connectors" deviceset="JST_2MM_MALE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17745,7 +17749,6 @@ Source: 008-0260-0_E.pdf</description>
 </instance>
 <instance part="C21" gate="C" x="110.49" y="105.41" rot="R90"/>
 <instance part="C22" gate="C" x="133.35" y="105.41" rot="R90"/>
-<instance part="J2" gate="G$1" x="71.12" y="147.32" rot="R180"/>
 <instance part="CF1" gate="G$1" x="134.62" y="198.12" smashed="yes" rot="R180">
 <attribute name="NAME" x="132.969" y="199.8218" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -17857,6 +17860,8 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="U$23" gate="G$1" x="271.78" y="248.92"/>
 <instance part="U$25" gate="G$1" x="299.72" y="231.14"/>
 <instance part="U$26" gate="G$1" x="276.86" y="228.6"/>
+<instance part="J1" gate="G$1" x="72.39" y="154.94" rot="R90"/>
+<instance part="J3" gate="G$1" x="72.898" y="130.81" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -18756,24 +18761,22 @@ Source: 008-0260-0_E.pdf</description>
 <segment>
 <wire x1="77.47" y1="157.48" x2="77.47" y2="162.052" width="0.1524" layer="91"/>
 <wire x1="77.47" y1="162.052" x2="91.948" y2="162.052" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="L"/>
 <wire x1="91.948" y1="162.052" x2="95.25" y2="162.052" width="0.1524" layer="91"/>
 <wire x1="91.948" y1="162.052" x2="91.948" y2="157.48" width="0.1524" layer="91"/>
 <junction x="91.948" y="162.052"/>
 <pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="I1N_IN1" class="0">
 <segment>
-<wire x1="62.23" y1="137.16" x2="62.23" y2="133.35" width="0.1524" layer="91"/>
-<wire x1="62.23" y1="133.35" x2="91.186" y2="133.35" width="0.1524" layer="91"/>
-<wire x1="91.186" y1="133.35" x2="91.186" y2="143.256" width="0.1524" layer="91"/>
-<wire x1="91.186" y1="143.256" x2="91.948" y2="143.256" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="COM1"/>
 <pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="91.948" y1="143.256" x2="95.25" y2="143.256" width="0.1524" layer="91"/>
 <wire x1="91.948" y1="149.86" x2="91.948" y2="143.256" width="0.1524" layer="91"/>
 <junction x="91.948" y="143.256"/>
+<pinref part="J1" gate="G$1" pin="-"/>
+<wire x1="91.948" y1="143.256" x2="77.47" y2="143.256" width="0.1524" layer="91"/>
+<wire x1="77.47" y1="143.256" x2="77.47" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CLKOUT" class="0">
